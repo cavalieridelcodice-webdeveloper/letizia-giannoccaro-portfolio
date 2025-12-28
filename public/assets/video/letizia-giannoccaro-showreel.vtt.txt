@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.000
+Ciao a tutti, mi chiamo Letizia Giannoccaro.
+
+00:00:04.200 --> 00:00:08.000
+Sono originaria di Bari, ma vivo a Roma da sette anni.
+
+00:00:08.500 --> 00:00:12.500
+Nella vita sono un'attrice e ballerina professionista.
+
+00:00:13.000 --> 00:00:17.500
+Mi sono diplomata come ballerina presso l'Accademia Unika di Bari.
+
+00:00:18.000 --> 00:00:23.000
+Ho poi proseguito gli studi come attrice con maestri come Lina Sastri, Ketty Roselli e Fabio Cucchini.
+
+00:00:23.500 --> 00:00:28.000
+Mi sono laureata al DAMS di Roma Tre con un percorso in teatro, musica e danza.
+
+00:00:28.500 --> 00:00:34.000
+Attualmente frequento la magistrale alla Sapienza in Scritture e Produzioni dello Spettacolo e dei Media.
+
+00:00:34.500 --> 00:00:39.000
+Ho lavorato come mima, ballerina e attrice in prestigiosi teatri italiani,
+
+00:00:39.200 --> 00:00:44.000
+tra cui l'Opera di Roma, l'Arena di Verona, il Petruzzelli di Bari e l'Alighieri di Ravenna.
+
+00:00:44.500 --> 00:00:49.000
+Collaboro inoltre come attrice con compagnie indipendenti in vari teatri di Roma e provincia.
+
+00:00:50.000 --> 00:00:52.000
+Ciao!
