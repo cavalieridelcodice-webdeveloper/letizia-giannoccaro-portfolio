@@ -42,7 +42,7 @@ export const Info: React.FC = () => {
                         <div className="relative h-full w-full overflow-hidden">
                             <img
                                 src="/assets/images/Letizia-Giannoccaro-corpo-intero.jpg"
-                                alt="Letizia Giannoccaro foto a corpo intero"
+                                alt="Letizia Giannoccaro - Foto promozionale a corpo intero"
                                 className="w-full h-full object-contain"
                             />
                         </div>
@@ -61,10 +61,11 @@ export const Info: React.FC = () => {
                             ))}
                         </div>
 
+                        {/* Link Scarica CV - Ottimizzato per tastiera */}
                         <a
                             href="/assets/download/Letizia-Giannoccaro-CV.pdf"
                             download="Letizia-Giannoccaro-CV.pdf"
-                            className="mt-10 inline-flex items-center gap-3 px-10 py-4 border border-white hover:bg-white hover:text-black transition-all uppercase tracking-widest text-sm font-bold"
+                            className="mt-10 inline-flex items-center gap-3 px-10 py-4 border border-white hover:bg-white hover:text-black focus:bg-white focus:text-black focus:outline-none focus:ring-4 focus:ring-gray-500 transition-all uppercase tracking-widest text-sm font-bold"
                         >
                             <Download size={18} /> Scarica CV
                         </a>
@@ -91,7 +92,7 @@ export const Info: React.FC = () => {
                     </div>
 
                     {/* COLONNA DESTRA: Bio Narrativa */}
-                    <div className="w-full md:w-2/3">
+                    <article className="w-full md:w-2/3">
                         <h3 className="text-xl font-serif mb-10 uppercase tracking-widest text-gray-400">La mia storia</h3>
                         <div className="space-y-6 text-gray-300 font-sans leading-relaxed text-lg">
                             <p className="font-serif text-2xl text-white italic mb-8">
@@ -104,17 +105,16 @@ export const Info: React.FC = () => {
                                 La sua formazione è un mosaico di studio e dedizione: dalla Laurea Triennale in <strong>Arti e Scienze dello Spettacolo (DAMS)</strong> al percorso magistrale presso <strong>La Sapienza</strong>, Letizia non ha mai smesso di perfezionarsi. Attrice, mima e ballerina, ha studiato con grandi maestri come <strong>Lina Sastri</strong> e ha affinato le sue doti fisiche e vocali attraverso workshop intensivi e laboratori coreografici internazionali.
                             </p>
                             <p>
-                                La sua carriera brilla per la presenza nei teatri più prestigiosi d'Italia. Dall’<strong>Arena di Verona</strong>, dove è stata protagonista in opere monumentali come <em>Carmen</em>, <em>Aida</em> e <em>La Bohème</em>, fino al <strong>Teatro dell’Opera di Roma</strong> e al <strong>Petruzzelli di Bari</strong> La sua versatilità l'ha portata a collaborare con registi del calibro di <strong>Franco Zeffirelli</strong>, <strong>Stefano Poda</strong>, <strong>Mario Martone</strong> e <strong>Chiara Muti</strong>.
+                                La sua carriera brilla per la presenza nei teatri più prestigiosi d'Italia. Dall’<strong>Arena di Verona</strong>, dove è stata protagonista in opere monumentali come <em>Carmen</em>, <em>Aida</em> e <em>La Bohème</em>, fino al <strong>Teatro dell’Opera di Roma</strong> e al <strong>Petruzzelli di Bari</strong>. La sua versatilità l'ha portata a collaborare con registi del calibro di <strong>Franco Zeffirelli</strong>, <strong>Stefano Poda</strong>, <strong>Mario Martone</strong> e <strong>Chiara Muti</strong>.
                             </p>
                             <p>
                                 Letizia non è solo tecnica, è pura energia. Volenterosa e instancabile, vive lo spettacolo a 360°: dalla recitazione per il cinema e la TV alla speaker radiofonica. Socievole e piena di vita, porta in ogni progetto la sua capacità di comunicare e la sua instancabile voglia di fare.
                             </p>
                         </div>
-                    </div>
+                    </article>
                 </div>
 
                 {/* PARTE INFERIORE: Video di Presentazione */}
-
                 <div className="mt-24 border-t border-white/10 pt-16 mb-10">
                     <h3 className="text-xl font-serif mb-10 uppercase tracking-widest text-gray-400 text-center">
                         Video di Presentazione
@@ -127,10 +127,10 @@ export const Info: React.FC = () => {
                             <video
                                 controls
                                 preload="auto"
-                                className="w-full h-full object-cover"
-                                // PERCORSO CORRETTO: rimosso "/public/assets/video" ripetuto
-                                poster="/assets/video/letizia-giannoccaro-cover.jpg">
-
+                                className="w-full h-full object-cover focus:ring-4 focus:ring-white outline-none"
+                                poster="/assets/video/letizia-giannoccaro-cover.jpg"
+                                aria-label="Video presentazione artistica di Letizia Giannoccaro"
+                            >
                                 <track
                                     kind="captions"
                                     src="/assets/video/sottotitoli.vtt"
@@ -138,7 +138,6 @@ export const Info: React.FC = () => {
                                     label="Italiano"
                                     default
                                 />
-                                {/* PERCORSO CORRETTO: rimosso "/public/assets/video" ripetuto */}
                                 <source src="/assets/video/letizia-giannoccaro-video-presentazione.mp4" type="video/mp4" />
                                 Il tuo browser non supporta il tag video.
                             </video>

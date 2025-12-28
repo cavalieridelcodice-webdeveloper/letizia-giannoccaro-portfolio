@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import { ChevronRight, ChevronLeft } from 'lucide-react';
+import { Link } from 'react-router-dom'; // Importato per rendere le card interattive
 import { Role } from '../types';
 
-// Array aggiornato con descrizioni ALT per la SEO
 const roles: (Role & { alt: string })[] = [
   {
     id: 1,
@@ -48,24 +48,26 @@ export const RoleCards: React.FC = () => {
   };
 
   return (
-    <section id="gallery" className="relative py-20 bg-portfolio-black">
-       <div className="container mx-auto px-6 mb-8 flex justify-between items-end">
+    <section id="roles" className="relative py-20 bg-portfolio-black overflow-hidden">
+       <div className="container mx-auto px-6 mb-12 flex justify-between items-end">
           <div>
-            <h2 className="text-3xl md:text-5xl font-serif text-white mb-2">Portfolio</h2>
+            <h2 className="text-4xl md:text-6xl font-serif text-white italic mb-2">Portfolio</h2>
             <div className="h-1 w-20 bg-white"></div>
           </div>
           
-          {/* Navigation Arrows */}
-          <div className="hidden gap-4">
+          {/* Navigation Arrows - Rese visibili e accessibili */}
+          <div className="flex gap-4">
             <button 
               onClick={() => scroll('left')}
-              className="p-3 border border-white/20 rounded-full hover:bg-white hover:text-black transition-all"
+              className="p-3 border border-white/20 rounded-full text-white hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white transition-all"
+              aria-label="Scorri a sinistra"
             >
               <ChevronLeft size={24} />
             </button>
             <button 
               onClick={() => scroll('right')}
-              className="p-3 border border-white/20 rounded-full hover:bg-white hover:text-black transition-all"
+              className="p-3 border border-white/20 rounded-full text-white hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white transition-all"
+              aria-label="Scorri a destra"
             >
               <ChevronRight size={24} />
             </button>
@@ -75,36 +77,36 @@ export const RoleCards: React.FC = () => {
       {/* Scrolling Container */}
       <div 
         ref={scrollContainerRef}
-        className="flex overflow-x-auto gap-6 px-6 md:px-12 pb-12 snap-x mandatory no-scrollbar"
+        className="flex overflow-x-auto gap-8 px-6 md:px-12 pb-12 snap-x mandatory no-scrollbar focus:outline-none"
+        tabIndex={-1}
       >
         {roles.map((role) => (
-          <div 
+          /* Trasformato in Link per mandare l'utente alla Gallery */
+          <Link 
             key={role.id}
-            className="snap-center shrink-0 w-[85vw] md:w-[400px] h-[60vh] md:h-[500px] relative group overflow-hidden cursor-pointer"
+            to="/gallery"
+            className="snap-center shrink-0 w-[85vw] md:w-[450px] h-[65vh] md:h-[550px] relative group overflow-hidden cursor-pointer block outline-none focus:ring-4 focus:ring-white rounded-sm"
+            aria-label={`Guarda foto come ${role.title}`}
           >
-            {/* Image con attributo ALT per la SEO */}
             <img 
               src={role.image} 
               alt={role.alt} 
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110  brightness-90 group-hover:brightness-100"
+              className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 group-focus:scale-110 brightness-75 group-hover:brightness-100 group-focus:brightness-100"
             />
             
-            {/* Overlay Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-40 group-focus:opacity-40 transition-opacity duration-500" />
             
-            {/* Text Content */}
-            <div className="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-              <h3 className="text-3xl md:text-4xl font-serif text-white mb-2 border-l-4 border-white pl-4">
+            <div className="absolute bottom-0 left-0 w-full p-10 translate-y-4 group-hover:translate-y-0 group-focus:translate-y-0 transition-transform duration-500">
+              <h3 className="text-4xl md:text-5xl font-serif text-white mb-4 border-l-4 border-white pl-6">
                 {role.title}
               </h3>
-              <p className="text-gray-300 font-sans pl-5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+              <p className="text-gray-300 font-sans pl-7 opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-500 delay-100 text-lg italic">
                 {role.description}
               </p>
             </div>
-          </div>
+          </Link>
         ))}
         
-        {/* Spacer for right padding */}
         <div className="shrink-0 w-6 md:w-12" />
       </div>
     </section>

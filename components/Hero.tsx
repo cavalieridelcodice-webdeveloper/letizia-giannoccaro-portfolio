@@ -10,26 +10,19 @@ export const Hero: React.FC = () => {
         className="absolute inset-0 bg-no-repeat transition-all duration-[1.5s] ease-out"
         style={{
           backgroundImage: "url('/assets/images/letizia-giannoccaro-portfolio-home.png')",
-          /* USIAMO 'cover' MA SPOSTIAMO L'INQUADRATURA:
-             'center 20%' focalizza l'attenzione sulla parte superiore della foto 
-             (dove sono gli occhi), evitando di tagliare il viso in modo strano.
-          */
           backgroundSize: 'cover',
           backgroundPosition: 'center 30%',
         }}
+        role="img"
+        aria-label="Ritratto di Letizia Giannoccaro - Home"
       >
-        {/* Overlay scuro uniforme per fondere l'immagine con lo sfondo nero del sito */}
         <div className="absolute inset-0 bg-black/20"></div>
-        
-        {/* Sfumatura laterale: questo trucco "sfuma" i bordi dell'immagine nel nero del sito */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40"></div>
-        
-        {/* Sfumatura inferiore per il testo */}
         <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black via-transparent to-transparent"></div>
       </div>
 
-      {/* Logo */}
-      <div className="absolute top-8 right-8 md:top-12 md:right-16 z-20">
+      {/* Logo - Rendiamolo navigabile se il componente Logo contiene un link */}
+      <div className="absolute top-8 right-8 md:top-12 md:right-16 z-20 focus-within:ring-2 focus-within:ring-white rounded-lg p-2 transition-all">
         <Logo />
       </div>
 
@@ -40,10 +33,14 @@ export const Hero: React.FC = () => {
         </p>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/40 animate-bounce">
+      {/* Scroll Indicator - Trasformato in bottone per la tastiera */}
+      <a 
+        href="#info" 
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/40 hover:text-white focus:text-white animate-bounce transition-colors outline-none focus:ring-2 focus:ring-white rounded-full p-2"
+        aria-label="Scorri verso il basso per le informazioni"
+      >
         <ChevronDown size={40} />
-      </div>
+      </a>
     </section>
   );
 };
