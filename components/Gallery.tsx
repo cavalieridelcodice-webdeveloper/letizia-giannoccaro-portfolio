@@ -210,7 +210,7 @@ export const Gallery: React.FC = () => {
         }, 
             ];
 
-    const categories = ['Tutte','Modella', 'Danza', 'Modella'];
+    const categories = ['Tutte','Modella', 'Danza', 'Cinema'];
 
     const filteredPhotos = filter === 'Tutte' 
         ? photos 
