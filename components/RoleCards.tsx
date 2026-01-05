@@ -15,14 +15,14 @@ const roles: (Role & { alt: string })[] = [
     id: 2,
     title: 'Attrice',
     image: '/assets/images/Letizia-Giannoccaro-come-attrice.jpg',
-    description: 'Interpretazione e passione scenica',
+    description: 'Interpretazione e presenza scenica',
     alt: 'Ritratto artistico di Letizia Giannoccaro come attrice di teatro e cinema'
   },
   {
     id: 3,
     title: 'Modella',
     image: '/assets/images/Letizia-Giannoccaro-come-modella.jpg',
-    description: 'Eleganza e presenza scenica',
+    description: 'Eleganza e potenza scenica',
     alt: 'Letizia Giannoccaro modella professionista per shooting di moda'
   },
   {

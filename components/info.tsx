@@ -28,7 +28,7 @@ export const Info: React.FC = () => {
         {
             icon: <Languages size={20} />,
             title: "Skills Linguistiche",
-            text: "Madrelingua italiana e un ottimo inglese (C1)."
+            text: "Madrelingua italiana e un ottimo inglese (B2)."
         },
     ];
 
@@ -102,10 +102,10 @@ export const Info: React.FC = () => {
                                 Nata sotto il sole di <strong>Bari</strong> nel 1999, Letizia ha coltivato fin da bambina un legame indissolubile con il mondo dell’arte. Con una borsa piena di sogni e una passione gigantesca, ha scelto di trasferirsi a <strong>Roma</strong> per trasformare la sua vocazione in una carriera d’eccellenza.
                             </p>
                             <p>
-                                La sua formazione è un mosaico di studio e dedizione: dalla Laurea Triennale in <strong>Arti e Scienze dello Spettacolo (DAMS)</strong> al percorso magistrale presso <strong>La Sapienza</strong>, Letizia non ha mai smesso di perfezionarsi. Attrice, mima e ballerina, ha studiato con grandi maestri come <strong>Lina Sastri</strong> e ha affinato le sue doti fisiche e vocali attraverso workshop intensivi e laboratori coreografici internazionali.
+                                La sua formazione è un mosaico di studio e dedizione: dalla Laurea Triennale in <strong>Arti e Scienze dello Spettacolo (DAMS) presso Roma Tre </strong> al percorso magistrale in Scrittura e Produzione dello Spettacolo e dei Media presso <strong>La Sapienza</strong>. Letizia non ha mai smesso di perfezionarsi. Attrice, mima e ballerina, ha studiato con grandi maestri come <strong>Lina Sastri</strong> e ha affinato le sue doti fisiche e vocali diplomandosi presso <strong>L'Accademia Unika di Bari</strong> attraverso workshop intensivi e laboratori coreografici internazionali.
                             </p>
                             <p>
-                                La sua carriera brilla per la presenza nei teatri più prestigiosi d'Italia. Dall’<strong>Arena di Verona</strong>, dove è stata protagonista in opere monumentali come <em>Carmen</em>, <em>Aida</em> e <em>La Bohème</em>, fino al <strong>Teatro dell’Opera di Roma</strong> e al <strong>Petruzzelli di Bari</strong>. La sua versatilità l'ha portata a collaborare con registi del calibro di <strong>Franco Zeffirelli</strong>, <strong>Stefano Poda</strong>, <strong>Mario Martone</strong> e <strong>Chiara Muti</strong>.
+                                La sua carriera si è sviluppata all'interno dei teatri più prestigiosi d'Italia. Dall’<strong>Arena di Verona</strong>, dove ha lavorato come mima in produzioni quali  è stata protagonista in opere monumentali come <em>Carmen</em>, <em>Aida</em> e <em>La Bohème</em>, fino al <strong>Teatro dell’Opera di Roma</strong> e al <strong>Teatro Petruzzelli di Bari</strong>. La sua versatilità artistica l'ha portata a collaborare con importanti registi della scena teatrale e operistica, tra cui <strong>Franco Zeffirelli</strong>, <strong>Stefano Poda</strong>, <strong>Mario Martone</strong> e <strong>Chiara Muti</strong>,<strong>Manu Lalli</strong>,<strong>Simon Stone</strong> e <strong>Pierluigi Pizzi</strong>, oltre ad altri protagonisti di rilievo del panorama nazionale e internazionale.
                             </p>
                             <p>
                                 Letizia non è solo tecnica, è pura energia. Volenterosa e instancabile, vive lo spettacolo a 360°: dalla recitazione per il cinema e la TV alla speaker radiofonica. Socievole e piena di vita, porta in ogni progetto la sua capacità di comunicare e la sua instancabile voglia di fare.

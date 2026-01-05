@@ -16,7 +16,7 @@ export const Gallery: React.FC = () => {
     const photos: Photo[] = [
         // ... (i tuoi dati restano invariati)
         { id: 0, url: '/assets/images/gallery/modella/letizia-giannoccaro-primo-piano-sorriso.jpg', title: 'Ritratto Sorridente', altText: 'Letizia Giannoccaro - Primo piano sorridente, attrice e modella professionista', category: 'Modella' },
-        { id: 1, url: '/assets/images/gallery/modella/letizia-giannoccaro-attrice-profilo-bn.jpg', title: 'Profilo Artistico', altText: 'Letizia Giannoccaro - Foto profilo artistico in bianco e nero per casting cinema', category: 'Modella' },
+        { id: 1, url: '/assets/images/gallery/modella/letizia-giannoccaro-attrice-profilo-bn.jpg', title: 'Sorriso naturale', altText: 'Letizia Giannoccaro - Foto profilo artistico in bianco e nero per casting cinema', category: 'Modella' },
         { id: 2, url: '/assets/images/gallery/modella/letizia-giannoccaro-modella-ritratto-cappello.jpg', title: 'Urban Style Portrait', altText: 'Letizia Giannoccaro - Ritratto modella con cappello e look urban street style', category: 'Modella' },
         { id: 3, url: '/assets/images/gallery/modella/letizia-giannoccaro-attrice-ritratto-bn.jpg', title: 'Headshot Professionale', altText: 'Letizia Giannoccaro - Headshot intenso in bianco e nero per portfolio attoriale', category: 'Modella' },
         { id: 4, url: '/assets/images/gallery/modella/letizia-giannoccaro-headshot-posa-artistica.jpg', title: 'Posa Editoriale', altText: 'Letizia Giannoccaro - Posa editoriale con mano nei capelli per book moda', category: 'Modella' },
@@ -33,7 +33,7 @@ export const Gallery: React.FC = () => {
         { id: 15, url: '/assets/images/gallery/danza/letizia-giannoccaro-seduta seria.jpg', title: 'Posa composta in seduta', altText: 'Letizia Giannoccaro, danzatrice e performer, posa composta da seduta con espressione seria in costume storico', category: 'Danza' },
         { id: 16, url: '/assets/images/gallery/danza/letizia-giannoccaro-abito-antico-professionale.jpg', title: 'Posa professionale', altText: 'Letizia Giannoccaro - Posa ballerina seduta professionale', category: 'Danza' },
         { id: 17, url: '/assets/images/gallery/danza/letizia-giannoccaro-abito-antico-pensierosa.jpg', title: 'Posa pensierosa', altText: 'Letizia Giannoccaro - Posa ballerina seduta pensierosa', category: 'Danza' },
-        { id: 18, url: '/assets/images/gallery/cinema/letizia-giannoccaro-primo-piano-cappello.jpg', title: 'Primo piano cinematografico', altText: 'Letizia Giannoccaro, attrice, primo piano cinematografico con cappello', category: 'Cinema' },
+        { id: 18, url: '/assets/images/gallery/cinema/Letizia-Giannoccaro-corpo-intero-abiti-giornalieri.jpg', title: 'Corpo intero ', altText: 'Letizia Giannoccaro, attrice, primo piano cinematografico con cappello', category: 'Cinema' },
         { id: 19, url: '/assets/images/gallery/cinema/letizia-giannoccaro-mezzo-busto-cappello.jpg', title: 'Mezzo busto per cinema', altText: 'Letizia Giannoccaro, attrice, mezzo busto con cappello per casting cinema', category: 'Cinema' },
         { id: 20, url: '/assets/images/gallery/cinema/letizia-giannoccaro-corpo-intero-cappello.jpg', title: 'Figura intera cinematografica', altText: 'Letizia Giannoccaro, attrice, figura intera con cappello in contesto cinematografico', category: 'Cinema' },
         { id: 21, url: '/assets/images/gallery/cinema/letizia-giannoccaro-corpo-intero-ferma.jpg', title: 'Figura intera in posa statica', altText: 'Letizia Giannoccaro, attrice, figura intera in posa statica con atteggiamento controllato, ideale per ruoli cinematografici contemporanei ', category: 'Cinema' },
@@ -41,7 +41,7 @@ export const Gallery: React.FC = () => {
         { id: 23, url: '/assets/images/gallery/cinema/letizia-giannoccaro-in-macchina.jpg', title: 'Scena intima in auto', altText: 'Letizia Giannoccaro, attrice, ritratto cinematografico seduta in auto, luce naturale e atmosfera narrativa', category: 'Cinema' },
         { id: 24, url: '/assets/images/gallery/cinema/letizia-giannoccaro-braccia-in-crociate.jpg', title: 'Atteggiamento deciso', altText: 'Letizia Giannoccaro, attrice, posa frontale con braccia incrociate, espressione determinata per ruoli drammatici', category: 'Cinema' },
         { id: 25, url: '/assets/images/gallery/cinema/letizia-giannoccaro-guarda-sinistra.jpg', title: 'Sguardo fuori campo', altText: 'Letizia Giannoccaro, attrice, ritratto cinematografico con sguardo laterale, ideale per casting e scene introspettive', category: 'Cinema' },
-        { id: 26, url: '/assets/images/gallery/cinema/letizia-giannoccaro-sorridente.jpg', title: 'Sorriso naturale', altText: 'Letizia Giannoccaro, attrice, ritratto con sorriso spontaneo e luce morbida per ruoli contemporanei', category: 'Cinema' },
+        { id: 26, url: '/assets/images/gallery/cinema/letizia-giannoccaro-sorridente.jpg', title: 'Foto professionale', altText: 'Letizia Giannoccaro, attrice, ritratto con sorriso spontaneo e luce morbida per ruoli contemporanei', category: 'Cinema' },
     ];
 
     const categories = ['Tutte', 'Modella', 'Danza', 'Cinema'];
