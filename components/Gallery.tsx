@@ -4,7 +4,7 @@ import { X, ChevronLeft, ChevronRight, Maximize2 } from 'lucide-react';
 interface Photo {
     id: number;
     url: string;
-    title: string;
+    
     altText: string;
     category: 'Modella' | 'Danza' | 'Cinema';
 }
@@ -15,33 +15,33 @@ export const Gallery: React.FC = () => {
 
     const photos: Photo[] = [
         // ... (i tuoi dati restano invariati)
-        { id: 0, url: '/assets/images/gallery/modella/letizia-giannoccaro-primo-piano-sorriso.jpg', title: 'Ritratto Sorridente', altText: 'Letizia Giannoccaro - Primo piano sorridente, attrice e modella professionista', category: 'Modella' },
-        { id: 1, url: '/assets/images/gallery/modella/letizia-giannoccaro-attrice-profilo-bn.jpg', title: 'Sorriso naturale', altText: 'Letizia Giannoccaro - Foto profilo artistico in bianco e nero per casting cinema', category: 'Modella' },
-        { id: 2, url: '/assets/images/gallery/modella/letizia-giannoccaro-modella-ritratto-cappello.jpg', title: 'Urban Style Portrait', altText: 'Letizia Giannoccaro - Ritratto modella con cappello e look urban street style', category: 'Modella' },
-        { id: 3, url: '/assets/images/gallery/modella/letizia-giannoccaro-attrice-ritratto-bn.jpg', title: 'Headshot Professionale', altText: 'Letizia Giannoccaro - Headshot intenso in bianco e nero per portfolio attoriale', category: 'Modella' },
-        { id: 4, url: '/assets/images/gallery/modella/letizia-giannoccaro-headshot-posa-artistica.jpg', title: 'Posa Editoriale', altText: 'Letizia Giannoccaro - Posa editoriale con mano nei capelli per book moda', category: 'Modella' },
-        { id: 5, url: '/assets/images/gallery/modella/letizia-giannoccaro-ritratto-artistico-mare.jpg', title: 'Ritratto Mediterraneo', altText: 'Letizia Giannoccaro - Ritratto artistico a colori con sfondo mare', category: 'Modella' },
-        { id: 6, url: '/assets/images/gallery/modella/letizia-giannoccaro-ritratto-artistico-primo-piano.jpg', title: 'Primo Piano Beauty', altText: 'Letizia Giannoccaro - Primo piano fotografico orientato al settore beauty', category: 'Modella' },
-        { id: 7, url: '/assets/images/gallery/modella/letizia-giannoccaro-ritratto-artistico-truccata.jpg', title: 'Fashion Look', altText: 'Letizia Giannoccaro - Ritratto fotografico con trucco editoriale', category: 'Modella' },
-        { id: 8, url: '/assets/images/gallery/modella/letizia-giannoccaro-ritratto-artistico-corpo-intero.jpg', title: 'Figura Intera', altText: 'Letizia Giannoccaro - Foto a corpo intero per portfolio modella e attrice', category: 'Modella' },
-        { id: 9, url: '/assets/images/gallery/danza/letizia-giannoccaro-mezzo-busto.jpg', title: 'Mezzo busto in costume d’epoca', altText: 'Letizia Giannoccaro, danzatrice e performer, ritratto a mezzo busto in costume d’epoca di ispirazione ottocentesca', category: 'Danza' },
-        { id: 10, url: '/assets/images/gallery/danza/letizia-giannoccaro-corpo-intero-con-abito-rosso.jpg', title: 'Figura intera in abito rosso', altText: 'Letizia Giannoccaro, danzatrice, figura intera con abito rosso di ispirazione storica', category: 'Danza' },
-        { id: 11, url: '/assets/images/gallery/danza/letizia-giannoccaro-corpo-intero-con-abito-rosso-seria.jpg', title: 'Espressione drammatica', altText: 'Letizia Giannoccaro, performer, espressione intensa in abito storico rosso', category: 'Danza' },
-        { id: 12, url: '/assets/images/gallery/danza/letizia-giannoccaro-corpo-intero-con-abito-rosso-antico-diverita.jpg', title: 'Espressione sorridente', altText: 'Letizia Giannoccaro - Espressione sorridente con abito rosso antico', category: 'Danza' },
-        { id: 13, url: '/assets/images/gallery/danza/letizia-giannoccaro-corpo-intero-con-abito-bianco-antica.jpg', title: 'Letizia Giannoccaro, performer, espressione intensa in abito storico bianco', altText: 'Letizia Giannoccaro, performer, figura intera con abito bianco storico', category: 'Danza' },
-        { id: 14, url: '/assets/images/gallery/danza/letizia-giannoccaro-corpo-intero-con-abito-rosso-antico-seduta.jpg', title: 'Abito antico seduta', altText: 'Letizia Giannoccaro - Foto a corpo intero con abito rosso antico seduta', category: 'Danza' },
-        { id: 15, url: '/assets/images/gallery/danza/letizia-giannoccaro-seduta seria.jpg', title: 'Posa composta in seduta', altText: 'Letizia Giannoccaro, danzatrice e performer, posa composta da seduta con espressione seria in costume storico', category: 'Danza' },
-        { id: 16, url: '/assets/images/gallery/danza/letizia-giannoccaro-abito-antico-professionale.jpg', title: 'Posa professionale', altText: 'Letizia Giannoccaro - Posa ballerina seduta professionale', category: 'Danza' },
-        { id: 17, url: '/assets/images/gallery/danza/letizia-giannoccaro-abito-antico-pensierosa.jpg', title: 'Posa pensierosa', altText: 'Letizia Giannoccaro - Posa ballerina seduta pensierosa', category: 'Danza' },
-        { id: 18, url: '/assets/images/gallery/cinema/Letizia-Giannoccaro-corpo-intero-abiti-giornalieri.jpg', title: 'Corpo intero ', altText: 'Letizia Giannoccaro, attrice, primo piano cinematografico con cappello', category: 'Cinema' },
-        { id: 19, url: '/assets/images/gallery/cinema/letizia-giannoccaro-mezzo-busto-cappello.jpg', title: 'Mezzo busto per cinema', altText: 'Letizia Giannoccaro, attrice, mezzo busto con cappello per casting cinema', category: 'Cinema' },
-        { id: 20, url: '/assets/images/gallery/cinema/letizia-giannoccaro-corpo-intero-cappello.jpg', title: 'Figura intera cinematografica', altText: 'Letizia Giannoccaro, attrice, figura intera con cappello in contesto cinematografico', category: 'Cinema' },
-        { id: 21, url: '/assets/images/gallery/cinema/letizia-giannoccaro-corpo-intero-ferma.jpg', title: 'Figura intera in posa statica', altText: 'Letizia Giannoccaro, attrice, figura intera in posa statica con atteggiamento controllato, ideale per ruoli cinematografici contemporanei ', category: 'Cinema' },
-        { id: 22, url: '/assets/images/gallery/cinema/letizia-giannoccaro-tailleur.jpg', title: 'Look elegante in tailleur', altText: 'Letizia Giannoccaro, attrice, figura intera in tailleur elegante per ruoli contemporanei', category: 'Cinema' },
-        { id: 23, url: '/assets/images/gallery/cinema/letizia-giannoccaro-in-macchina.jpg', title: 'Scena intima in auto', altText: 'Letizia Giannoccaro, attrice, ritratto cinematografico seduta in auto, luce naturale e atmosfera narrativa', category: 'Cinema' },
-        { id: 24, url: '/assets/images/gallery/cinema/letizia-giannoccaro-braccia-in-crociate.jpg', title: 'Atteggiamento deciso', altText: 'Letizia Giannoccaro, attrice, posa frontale con braccia incrociate, espressione determinata per ruoli drammatici', category: 'Cinema' },
-        { id: 25, url: '/assets/images/gallery/cinema/letizia-giannoccaro-guarda-sinistra.jpg', title: 'Sguardo fuori campo', altText: 'Letizia Giannoccaro, attrice, ritratto cinematografico con sguardo laterale, ideale per casting e scene introspettive', category: 'Cinema' },
-        { id: 26, url: '/assets/images/gallery/cinema/letizia-giannoccaro-sorridente.jpg', title: 'Foto professionale', altText: 'Letizia Giannoccaro, attrice, ritratto con sorriso spontaneo e luce morbida per ruoli contemporanei', category: 'Cinema' },
+        { id: 0, url: '/assets/images/gallery/modella/letizia-giannoccaro-primo-piano-sorriso.jpg', altText: 'Letizia Giannoccaro - Primo piano sorridente, attrice e modella professionista', category: 'Modella' },
+        { id: 1, url: '/assets/images/gallery/modella/letizia-giannoccaro-attrice-profilo-bn.jpg', altText: 'Letizia Giannoccaro - Foto profilo artistico in bianco e nero per casting cinema', category: 'Modella' },
+        { id: 2, url: '/assets/images/gallery/modella/letizia-giannoccaro-modella-ritratto-cappello.jpg', altText: 'Letizia Giannoccaro - Ritratto modella con cappello e look urban street style', category: 'Modella' },
+        { id: 3, url: '/assets/images/gallery/modella/letizia-giannoccaro-attrice-ritratto-bn.jpg', altText: 'Letizia Giannoccaro - Headshot intenso in bianco e nero per portfolio attoriale', category: 'Modella' },
+        { id: 4, url: '/assets/images/gallery/modella/letizia-giannoccaro-headshot-posa-artistica.jpg', altText: 'Letizia Giannoccaro - Posa editoriale con mano nei capelli per book moda', category: 'Modella' },
+        { id: 5, url: '/assets/images/gallery/modella/letizia-giannoccaro-ritratto-artistico-mare.jpg', altText: 'Letizia Giannoccaro - Ritratto artistico a colori con sfondo mare', category: 'Modella' },
+        { id: 6, url: '/assets/images/gallery/modella/letizia-giannoccaro-ritratto-artistico-primo-piano.jpg', altText: 'Letizia Giannoccaro - Primo piano fotografico orientato al settore beauty', category: 'Modella' },
+        { id: 7, url: '/assets/images/gallery/modella/letizia-giannoccaro-ritratto-artistico-truccata.jpg', altText: 'Letizia Giannoccaro - Ritratto fotografico con trucco editoriale', category: 'Modella' },
+        { id: 8, url: '/assets/images/gallery/modella/letizia-giannoccaro-ritratto-artistico-corpo-intero.jpg', altText: 'Letizia Giannoccaro - Foto a corpo intero per portfolio modella e attrice', category: 'Modella' },
+        { id: 9, url: '/assets/images/gallery/danza/letizia-giannoccaro-mezzo-busto.jpg', altText: 'Letizia Giannoccaro, danzatrice e performer, ritratto a mezzo busto in costume d’epoca di ispirazione ottocentesca', category: 'Danza' },
+        { id: 10, url: '/assets/images/gallery/danza/letizia-giannoccaro-corpo-intero-con-abito-rosso.jpg', altText: 'Letizia Giannoccaro, danzatrice, figura intera con abito rosso di ispirazione storica', category: 'Danza' },
+        { id: 11, url: '/assets/images/gallery/danza/letizia-giannoccaro-corpo-intero-con-abito-rosso-seria.jpg', altText: 'Letizia Giannoccaro, performer, espressione intensa in abito storico rosso', category: 'Danza' },
+        { id: 12, url: '/assets/images/gallery/danza/letizia-giannoccaro-corpo-intero-con-abito-rosso-antico-diverita.jpg', altText: 'Letizia Giannoccaro - Espressione sorridente con abito rosso antico', category: 'Danza' },
+        { id: 13, url: '/assets/images/gallery/danza/letizia-giannoccaro-corpo-intero-con-abito-bianco-antica.jpg',altText: 'Letizia Giannoccaro, performer, figura intera con abito bianco storico', category: 'Danza' },
+        { id: 14, url: '/assets/images/gallery/danza/letizia-giannoccaro-corpo-intero-con-abito-rosso-antico-seduta.jpg', altText: 'Letizia Giannoccaro - Foto a corpo intero con abito rosso antico seduta', category: 'Danza' },
+        { id: 15, url: '/assets/images/gallery/danza/letizia-giannoccaro-seduta seria.jpg', altText: 'Letizia Giannoccaro, danzatrice e performer, posa composta da seduta con espressione seria in costume storico', category: 'Danza' },
+        { id: 16, url: '/assets/images/gallery/danza/letizia-giannoccaro-abito-antico-professionale.jpg', altText: 'Letizia Giannoccaro - Posa ballerina seduta professionale', category: 'Danza' },
+        { id: 17, url: '/assets/images/gallery/danza/letizia-giannoccaro-abito-antico-pensierosa.jpg',  altText: 'Letizia Giannoccaro - Posa ballerina seduta pensierosa', category: 'Danza' },
+        { id: 18, url: '/assets/images/gallery/cinema/Letizia-Giannoccaro-corpo-intero-abiti-giornalieri.jpg', altText: 'Letizia Giannoccaro, attrice, primo piano cinematografico con cappello', category: 'Cinema' },
+        { id: 19, url: '/assets/images/gallery/cinema/letizia-giannoccaro-mezzo-busto-cappello.jpg', altText: 'Letizia Giannoccaro, attrice, mezzo busto con cappello per casting cinema', category: 'Cinema' },
+        { id: 20, url: '/assets/images/gallery/cinema/letizia-giannoccaro-corpo-intero-cappello.jpg', altText: 'Letizia Giannoccaro, attrice, figura intera con cappello in contesto cinematografico', category: 'Cinema' },
+        { id: 21, url: '/assets/images/gallery/cinema/letizia-giannoccaro-corpo-intero-ferma.jpg', altText: 'Letizia Giannoccaro, attrice, figura intera in posa statica con atteggiamento controllato, ideale per ruoli cinematografici contemporanei ', category: 'Cinema' },
+        { id: 22, url: '/assets/images/gallery/cinema/letizia-giannoccaro-tailleur.jpg', altText: 'Letizia Giannoccaro, attrice, figura intera in tailleur elegante per ruoli contemporanei', category: 'Cinema' },
+        { id: 23, url: '/assets/images/gallery/cinema/letizia-giannoccaro-in-macchina.jpg', altText: 'Letizia Giannoccaro, attrice, ritratto cinematografico seduta in auto, luce naturale e atmosfera narrativa', category: 'Cinema' },
+        { id: 24, url: '/assets/images/gallery/cinema/letizia-giannoccaro-braccia-in-crociate.jpg', altText: 'Letizia Giannoccaro, attrice, posa frontale con braccia incrociate, espressione determinata per ruoli drammatici', category: 'Cinema' },
+        { id: 25, url: '/assets/images/gallery/cinema/letizia-giannoccaro-guarda-sinistra.jpg', altText: 'Letizia Giannoccaro, attrice, ritratto cinematografico con sguardo laterale, ideale per casting e scene introspettive', category: 'Cinema' },
+        { id: 26, url: '/assets/images/gallery/cinema/letizia-giannoccaro-sorridente.jpg', altText: 'Letizia Giannoccaro, attrice, ritratto con sorriso spontaneo e luce morbida per ruoli contemporanei', category: 'Cinema' },
     ];
 
     const categories = ['Tutte', 'Modella', 'Danza', 'Cinema'];
@@ -110,7 +110,7 @@ export const Gallery: React.FC = () => {
                             key={photo.id}
                             className="relative aspect-[3/4] overflow-hidden group cursor-pointer bg-gray-900 shadow-lg focus:outline-none focus:ring-4 focus:ring-white"
                             onClick={() => setSelectedIndex(index)}
-                            aria-label={`Visualizza ingrandimento: ${photo.title}`}
+                            aria-label={`Visualizza ingrandimento: ${photo}`}
                         >
                             <img 
                                 src={photo.url} 
@@ -121,7 +121,7 @@ export const Gallery: React.FC = () => {
                             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 group-focus:bg-black/40 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100 group-focus:opacity-100">
                                 <div className="text-center transform translate-y-4 group-hover:translate-y-0 group-focus:translate-y-0 transition-transform duration-300">
                                     <Maximize2 className="text-white w-8 h-8 mx-auto mb-2" />
-                                    <p className="text-white text-xs uppercase tracking-[0.2em]">{photo.title}</p>
+
                                 </div>
                             </div>
                         </button>
@@ -166,9 +166,7 @@ export const Gallery: React.FC = () => {
                             alt={filteredPhotos[selectedIndex].altText}
                             className="max-w-full max-h-[85vh] object-contain shadow-2xl animate-in fade-in zoom-in duration-300"
                         />
-                        <p className="mt-6 text-white text-lg font-serif italic tracking-widest uppercase bg-black/50 px-4 py-1 rounded">
-                            {filteredPhotos[selectedIndex].title}
-                        </p>
+                       
                     </div>
                 </div>
             )}
